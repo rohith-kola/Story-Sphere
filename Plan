@@ -1,0 +1,42 @@
+Day 1:
+    - Define project objectives
+        - Create a webpage that allows users to write stories and rate and review other user's stories.
+        - Admin can delete reviews and story posts.
+    - Define requirements
+        - explore different other websites: 1.5hr
+        - design layout: 1.5hr
+        - code frontend: 10hr
+        - backend integration plan: 2.5hr
+        - backend coding: 7hr
+        - connect backend and frontend: 7hr
+    - Create timeline
+        - Nov 15: 
+            - explore diff other websites
+            - design layout
+        - Nov 16:
+            - code frontend: 5hr
+            - backend plan: 1hr
+        - Nov 17:
+            - code frontend: 5hr
+            - backend plan: 1.5hr
+
+Day 2:
+    - Explore different webpages design
+        --> Done
+
+    - Fix the UI design
+        --> user can upload the cover photo for the story.
+        --> UI shows cover photo + author + date+ + story title + two liner (user i/p of catchy line about story) + rating + views.
+        --> Filter to sort by date, rating, views.
+        --> Optional: (Genre) + Filter by Genre
+
+    - Create front end UI prototype
+        --> Done
+
+    - Gather libraries required for the design
+        --> 
+
+Day 3:
+    - Create prototype for front-end and back-end integration
+    - Explore backend possibilities
+    - Start building frontend
