@@ -12,7 +12,7 @@ export function Main(){
                         <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l mx-3">Write Story</button>
                     </div>
                     <div>
-                        <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l" onClick={}>About</button>
+                        <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l">About</button>
                     </div>
                 </div>
             </div>
