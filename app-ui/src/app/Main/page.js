@@ -1,6 +1,16 @@
-import Image from "next/image"
+"use client"
+import Image from "next/image";
+import Link from "next/link";
+import { useRouter } from "next/navigation"
 
-export function Main(){
+export default function Main(){
+
+    const router = useRouter();
+
+    function navigateWrite(){
+        router.push("/Write")
+    }
+    
     return(
         <div>
             <div className="flex justify-between m-5">
@@ -9,10 +19,10 @@ export function Main(){
                 </div>
                 <div className="flex">
                     <div>
-                        <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l mx-3">Write Story</button>
+                        <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l mx-3" onClick={navigateWrite}>Write Story</button>
                     </div>
                     <div>
-                        <button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l">About</button>
+                        <Link href="#About"><button className="rounded-lg border-2 border-solid bg-green-800 hover:bg-green-900 px-2 py-1 text-white text-l">About</button></Link>
                     </div>
                 </div>
             </div>
