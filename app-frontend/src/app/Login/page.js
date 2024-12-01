@@ -1,5 +1,4 @@
 "use client"
-import Link from "next/link";
 import { useState } from "react"
 import { useRouter } from "next/navigation";
 
@@ -13,7 +12,7 @@ export default function Login() {
         e.preventDefault();
 
         if (username == "rohit" && password == "123"){
-            router.push('/Main');
+            router.push('/Home');
         }
         else{
             alert("Invalid credentials")
@@ -23,27 +22,30 @@ export default function Login() {
 
     return (
         <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <div className="flex flex-col bg-white p-8 rounded shadow-md border">
-            <h1 className="text-2xl font-bold text-center text-green-800 myb-3">Story Sphere</h1>
+            <div className="flex flex-col bg-white p-8 rounded shadow-md border w-full max-w-sm">
+            <h1 className="text-2xl font-bold text-center text-green-800 mb-3">Story Sphere</h1>
                 <h2 className="text-xl font-bold text-center text-green-800 my-3">Login</h2>
                 <form onSubmit={handleSubmit}>
-                    <label className="font-semibold text-green-800">Username</label>
+                    <div className="flex flex-col">
+                    <label className="text-green-800">Username</label>
                     <input
-                     className="border-2 border-green-800 rounded mx-2 w-30"
+                     className="border-2 border-green-800 rounded w-full px-1"
                      type="text" 
                      id="username"
                      value={username}
                      onChange={(e)=>setUsername(e.target.value)}
                     />
-                    <br />
-                    <label className="font-bold text-green-800">Password</label>
+                    </div>
+                    <div className="flex flex-col mt-2">
+                    <label className="text-green-800">Password</label>
                     <input
-                     className="border-2 border-green-800 rounded m-2 w-30"
+                     className="border-2 border-green-800 rounded w-full px-1"
                      type="password" 
                      id="password"
                      value={password}
                      onChange={(e)=>setPassword(e.target.value)}
                     />
+                    </div>
                     <br />
                     <button className="border my-3 bg-green-700 text-white font-bold p-1 rounded w-full"
                      type="submit"
