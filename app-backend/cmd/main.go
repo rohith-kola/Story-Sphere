@@ -20,7 +20,7 @@ const (
 	host     = "localhost"
 	port     = 5433
 	user     = "postgres"
-	password = "****"
+	password = "1234"
 	dbname   = "StorySphereDB"
 )
 
@@ -39,7 +39,7 @@ func dbcon() *sql.DB {
 
 func insert(db *sql.DB) {
 
-	data, err := os.Open("/Users/Rohith/Downloads/profile-pic.png")
+	data, err := os.Open("/Users/venkatarohithkola/Downloads/profile-pic.png")
 	if err != nil {
 		fmt.Println("It's an error")
 	}

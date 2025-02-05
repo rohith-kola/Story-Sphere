@@ -52,7 +52,7 @@ export default function Show(){
             </div>
 
             <div className="m-5 details">
-                <p>Author: Rohith Kola</p>
+                <p>Author: Raj</p>
                 <p>Title: Robot</p>
             </div>
 
@@ -65,6 +65,7 @@ export default function Show(){
                     <Rating />
                 </div>
                 <button className="p-1 bg-green-800 text-white mt-2 rounded text-sm" onClick={Rated}>Submit</button>
+                    
             </div>
         </>
     )
